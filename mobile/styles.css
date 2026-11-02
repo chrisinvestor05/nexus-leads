@@ -76,3 +76,5 @@ body.mobile{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
 .lead-form input:focus,.lead-form textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
 .lead-form button{width:100%;margin-top:8px}
 @media (min-width:640px){.form-grid{grid-template-columns:1fr 1fr}.form-grid label:nth-child(3),.form-grid label:nth-child(4){grid-column:1/-1}}
+
+.full{grid-column:1/-1}
