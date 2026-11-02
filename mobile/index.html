@@ -91,10 +91,12 @@
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_next" value="https://nexus-leads-chrisinvestor05-9546s-projects.vercel.app/?submitted=1">
   <div class="form-grid">
-    <label>Name<input type="text" name="name" required placeholder="Your name"></label>
+    <label>First Name<input type="text" name="first_name" required placeholder="First name"></label>
+    <label>Last Name<input type="text" name="last_name" required placeholder="Last name"></label>
     <label>Phone<input type="tel" name="phone" required placeholder="(720) 555-1234"></label>
-    <label>Property Address<input type="text" name="address" required placeholder="123 Main St, Denver, CO"></label>
-    <label>Condition / Notes<textarea name="notes" rows="3" placeholder="Any details about the property (optional)"></textarea></label>
+    <label>Email<input type="email" name="email" required placeholder="you@email.com"></label>
+    <label class="full">Property Address for Sale<input type="text" name="address" required placeholder="123 Main St, Denver, CO"></label>
+    <label class="full">Notes (optional)<textarea name="notes" rows="3" placeholder="Any details about the property or your situation"></textarea></label>
   </div>
   <button type="submit" class="btn btn-gold">Get My Cash Offer</button>
 </form>
