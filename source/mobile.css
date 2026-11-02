@@ -1,0 +1,16 @@
+/* mobile-first build */
+body.mobile{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+.mobile .wrap{max-width:640px;padding:0 18px}
+.mobile .bar{height:56px}.mobile .brand img{height:32px}.mobile .phone{font-size:.95rem}
+.mobile .hero{padding:44px 0 40px;background:linear-gradient(180deg,rgba(15,23,42,.82),rgba(15,23,42,.96)),url(/img/hero-800.jpg) center/cover}
+.mobile .hero h1{font-size:2rem}.mobile .lede{font-size:1.02rem}
+.mobile .btn{width:100%}.mobile .trust{flex-direction:column;gap:4px}
+.mobile .sec{padding:44px 0}.mobile .callout{padding:32px 0}
+.mobile .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px}
+.mobile .gallery figure{flex:0 0 82%;scroll-snap-align:start}.mobile .gallery figure:first-child img{height:auto;aspect-ratio:4/3}
+.mobile .grid,.mobile .reviews,.mobile .steps{grid-template-columns:1fr;gap:12px}
+.mobile .about{grid-template-columns:1fr}.mobile .about-mark{width:56px}
+.sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--navy);border-top:2px solid var(--gold);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+.sticky-bar a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:10px;font-weight:800;text-decoration:none;font-size:1.05rem}
+.sb-call{background:var(--gold);color:var(--navy)}.sb-text{background:#fff;color:var(--navy)}
+@media (min-width:900px){.mobile .wrap{max-width:1000px}.mobile .grid{grid-template-columns:repeat(2,1fr)}.mobile .reviews,.mobile .steps{grid-template-columns:repeat(3,1fr)}}
