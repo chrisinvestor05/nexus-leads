@@ -59,4 +59,5 @@ summary::after{content:"+";float:right;color:var(--gold2);font-weight:800}detail
 .lead-form input,.lead-form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
 .lead-form input:focus,.lead-form textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
 .lead-form button{width:100%;margin-top:8px}
-@media (min-width:640px){.form-grid{grid-template-columns:1fr 1fr}.form-grid label:nth-child(3),.form-grid label:nth-child(4){grid-column:1/-1}}
+@media (min-width:640px){.form-grid{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
+.full{grid-column:1/-1}
