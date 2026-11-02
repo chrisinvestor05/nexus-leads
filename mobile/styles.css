@@ -67,3 +67,12 @@ body.mobile{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
 .sticky-bar a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:10px;font-weight:800;text-decoration:none;font-size:1.05rem}
 .sb-call{background:var(--gold);color:var(--navy)}.sb-text{background:#fff;color:var(--navy)}
 @media (min-width:900px){.mobile .wrap{max-width:1000px}.mobile .grid{grid-template-columns:repeat(2,1fr)}.mobile .reviews,.mobile .steps{grid-template-columns:repeat(3,1fr)}}
+
+/* Lead form */
+.lead-form{max-width:560px;margin:24px auto 0}
+.form-grid{display:grid;gap:16px}
+.lead-form label{display:block;font-weight:600;font-size:.92rem;margin-bottom:4px}
+.lead-form input,.lead-form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+.lead-form input:focus,.lead-form textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+.lead-form button{width:100%;margin-top:8px}
+@media (min-width:640px){.form-grid{grid-template-columns:1fr 1fr}.form-grid label:nth-child(3),.form-grid label:nth-child(4){grid-column:1/-1}}
