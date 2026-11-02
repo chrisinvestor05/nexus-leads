@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Get a Cash Offer | Nexus Management Solutions</title>
+<meta name="description" content="Request a no-obligation cash offer for your Colorado house. Fill out the form with your name, phone, email, and property address.">
+<link rel="stylesheet" href="/styles.css">
 <style>
-body{font-family:system-ui,sans-serif;background:#f8fafc;color:#1e293b;margin:0;padding:2rem}
-.form{max-width:480px;margin:2rem auto;background:#fff;padding:2rem;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
-h1{color:#0f172a;text-align:center}
-label{display:block;margin:1rem 0 .3rem;font-weight:600}
-input,textarea{width:100%;padding:.75rem;border:1px solid #e2e8f0;border-radius:6px;font-size:1rem}
-button{width:100%;background:#d4af37;color:#0f172a;padding:1rem;font-weight:700;border:none;border-radius:6px;font-size:1.1rem;margin-top:1rem;cursor:pointer}
-.back{text-align:center;margin-top:1.5rem}
-a{color:#0f172a}
+body{background:#f8fafc}
+.lead-page{max-width:560px;margin:40px auto;padding:0 20px}
+.lead-page h1{text-align:center;margin-bottom:8px}
+.lead-page p.intro{text-align:center;color:#64748b;margin-bottom:28px}
+.lead-form{background:#fff;padding:28px;border-radius:12px;border:1px solid #e2e8f0;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.form-grid{display:grid;gap:16px}
+.lead-form label{display:block;font-weight:600;font-size:.92rem;margin-bottom:4px}
+.lead-form input,.lead-form textarea{width:100%;padding:12px 14px;border:1px solid #e2e8f0;border-radius:8px;font:inherit;background:#fff}
+.lead-form input:focus,.lead-form textarea:focus{outline:2px solid #d4af37;outline-offset:1px;border-color:#d4af37}
+.full{grid-column:1/-1}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:10px;font-weight:800;text-decoration:none;border:none;cursor:pointer;width:100%;margin-top:8px;background:#d4af37;color:#0f172a;font-size:1.05rem}
+.back{text-align:center;margin-top:20px}
+.back a{color:#0f172a;font-weight:600}
+@media (min-width:640px){.form-grid{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
 </style>
 </head>
 <body>
-<div class="form">
+<div class="lead-page">
 <h1>Get a Cash Offer</h1>
-<p style="text-align:center">Fill this out and we’ll contact you the same day. Or call/text <strong>(720) 780-1512</strong>.</p>
-<form action="https://formsubmit.co/chrisinvestor05@gmail.com" method="POST">
+<p class="intro">Tell us about the property. We’ll reach out the same day with next steps.<br>Or call/text <strong>(720) 780-1512</strong>.</p>
+<form action="https://formsubmit.co/chrisinvestor05@gmail.com" method="POST" class="lead-form">
   <input type="hidden" name="_subject" value="New Lead from Nexus Website">
   <input type="hidden" name="_captcha" value="false">
-  <label>Name<input type="text" name="name" required></label>
-  <label>Phone<input type="tel" name="phone" required></label>
-  <label>Property Address<input type="text" name="address" required></label>
-  <label>Notes<textarea name="notes" rows="3"></textarea></label>
-  <button type="submit">Send My Info</button>
+  <input type="hidden" name="_next" value="https://nexus-leads-chrisinvestor05-9546s-projects.vercel.app/?submitted=1">
+  <div class="form-grid">
+    <label>First Name<input type="text" name="first_name" required placeholder="First name"></label>
+    <label>Last Name<input type="text" name="last_name" required placeholder="Last name"></label>
+    <label>Phone<input type="tel" name="phone" required placeholder="(720) 555-1234"></label>
+    <label>Email<input type="email" name="email" required placeholder="you@email.com"></label>
+    <label class="full">Property Address for Sale<input type="text" name="address" required placeholder="123 Main St, Denver, CO"></label>
+    <label class="full">Notes (optional)<textarea name="notes" rows="3" placeholder="Any details about the property or your situation"></textarea></label>
+  </div>
+  <button type="submit" class="btn">Get My Cash Offer</button>
 </form>
 <p class="back"><a href="/">← Back to site</a></p>
 </div>
